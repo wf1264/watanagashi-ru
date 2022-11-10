@@ -1,0 +1,18 @@
+﻿void main()
+{
+}
+
+void dialog001()
+{
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300003", 256, TRUE);
+	OutputLine(NULL, "　そりゃもう、熱中的なくらいに！！」",
+		NULL, " Становится будто скаженная!!\"", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300064", 256, TRUE);
+	OutputLine(NULL, "「かつてフランスからある高名なシェフが来日した時、ホテルの人たちが様々な材料をフランスから空輸したんだそうです。",
+		NULL, "\"Как-то раз в Японию заезжал трёхзвёздочный повар из списка Мишлен. К его прибытию ресторан заказал из Франции самолётом всё самое лучшее.", GetGlobalFlag(GLinemodeSp));
+}

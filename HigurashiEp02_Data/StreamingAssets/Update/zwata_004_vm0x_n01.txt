@@ -1,0 +1,140 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_01", 256, TRUE);
+	OutputLine(NULL, "「いや、お祭りの話は前に魅音たちからも聞いたけどさ。……確か梨花ちゃん、お祭りの実行委員なんだよな。それと関係あるのか？」",
+		   NULL,"\"Ребята, раньше вроде упоминали о фестивале. Да верно, Рика-тян состоит в комитете, ведь так? Он что-то может с этим сделать?\"", Line_Normal);
+
+
+	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 2, "sprite/re3a_def_a1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね＠その練習なの。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200081", 256, TRUE);
+	OutputLine(NULL, "「梨花ちゃんは綿流しの巫女さんだから、奉納の演舞をすることになっててね。",
+		   NULL,"\"Потому как Рика-тян выступает на Ватанагаси жрицей, она исполняет священную пляску.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200082", 256, TRUE);
+	OutputLine(NULL, "その練習なの。」",
+		   NULL," Для чего и тренируется.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう言えば…お袋が夕飯の時、そんな話をしていたような気がする。",
+		   NULL,"А, верно... мама говорила про что-то такое за ужином.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "つまり梨花ちゃんがその巫女役をつとめるってことか。",
+		   NULL, " Значит Рика будет жрицей?", Line_Normal);
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_02", 256, TRUE);
+	OutputLine(NULL, "「なるほどな。確か、布団とかどてらの供養だって言ってたよな。…じゃあ、あれか？　演舞か何かで、中に入ってる綿を取り出したりするのか？」",
+		   NULL, "\"Ясно, получается нечто вроде поминальной службы..А хлопок, получается, будет доставаться изнутри в процессе выступления?\"", Line_Normal);
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200087", 256, TRUE);
+	OutputLine(NULL, "「祭壇にもお布団を積み上げているし。",
+		   NULL, "\"На алтаре также сложены футоны.", Line_WaitForInput);
+}
+
+void dialog005()
+{
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200083", 256, TRUE);
+	OutputLine(NULL, "綿流しはね、毎年６月の日曜日に神社でやるお祭りなの。",
+		   NULL, " Ватанагаси прозывается фестиваль, каждый год проводимый в храме в месяц июнь.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200084", 256, TRUE);
+	OutputLine(NULL, "とってもにぎわうんだよ！」",
+		   NULL," На нём очень живо и шумно!\"", Line_Normal);
+//	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(3, 2, "sprite/re3a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って魅音とレナがちょっと感心したように、にっこりと笑いながらうなずき返す。",
+		   NULL, "Мион и Рэна кивнули мне в ответ.", Line_WaitForInput);
+
+//どうやら今度の想像は当たっていたようだ。kまぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、k……それだと流れも堰き止められるし、なにより後始末が大変だしな。
+	OutputLine(NULL, "どうやら今度の想像は当たっていたようだ。",
+		   NULL, " Казалось, мои наблюдения были на высоте.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まぁ、はじめに聞いたときは布団を沢に積み上げるイメージが真っ先に思い浮かんだけど、",
+		   NULL, " Хотя, когда я впервые об этом услышал, я представил, как складывают футоны в болоте.", Line_WaitForInput);
+	OutputLine(NULL, "……それだと流れも堰き止められるし、なにより後始末が大変だしな。",
+		   NULL, " ...но это заблокировало бы реку, и было бы настоящей проблемой все потом расчистить.", Line_Normal);
+
+//圭一「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。布団の供養っては初耳だな。どんな謂れがあるんだ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei15130_03", 256, TRUE);
+	OutputLine(NULL, "「……それにしてもご先祖様とか戦没者とか、針とか包丁とかの供養ってのは聞いたことあるけど。",
+		   NULL, "\"Слышал я, чтобы отдавали почести предкам или павшим в войну, да что там — даже ножам и швейным иголкам..", Line_Continue);
+	OutputLine(NULL, "布団の供養っては初耳だな。",
+		   NULL," Но вот чтобы футонам — ни разу.", Line_Continue);
+	OutputLine(NULL, "どんな謂れがあるんだ？」",
+		   NULL," С чего пошло?\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Хулиган</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50006", 256, TRUE);
+	OutputLine(NULL, "「ンだこの女ぁあぁぁあぁああ！！！",
+		   NULL, "\"АХ ТЫ СУУУУУУКААААА!!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/badb50007", 256, TRUE);
+	OutputLine(NULL, "　ッくぞンにゃろぉおおおぉおお！！」",
+		   NULL," ТЫ ННА КАВО ПАСТЬ РРРАСКРЫЛААААА?!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Женщина</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s19/00/womb50004", 256, TRUE);
+	OutputLine(NULL, "　はぁ…まったく！」",
+		   NULL, "А!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600093", 256, TRUE);
+	OutputLine(NULL, "「それよりもさっきのあれ。",
+		   NULL,"\"А ты тогда как......", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 6, "ps3/s19/06/500600094", 256, TRUE);
+	OutputLine(NULL, "……驚きましたか？」",
+		   NULL," удивился быстро собравшемуся народу?\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

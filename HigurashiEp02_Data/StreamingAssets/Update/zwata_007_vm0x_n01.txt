@@ -1,0 +1,152 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34750", 256, TRUE);
+	OutputLine(NULL, "「プロポーション最上級。",
+		   NULL, "\"С большущею грудью,", Line_Continue);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei34760", 256, TRUE);
+	OutputLine(NULL, "アイドル真っ青のルックスと、俺の言うことなんでも確実に聞く器量よしで頼む。」",
+		   NULL, " И чтоб давала её трогать и мять.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800037", 256, TRUE);
+	OutputLine(NULL, "「やあ、圭一くん。",
+		   NULL, "\"А ты будешь тот самый переведённый ученик, Маэбара Кейти-кун.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800038", 256, TRUE);
+	OutputLine(NULL, "　今日は張り切って仕事してたね！　感心したよ。」",
+		   NULL," Так бодро трудился днём — я впечатлён!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35230", 256, TRUE);
+	OutputLine(NULL, "「いえ、それほどでも……詩音とも知り合いなんですか？」",
+		   NULL, "\"Да пустяки... Вы и Шион знаете, тоже?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800039", 256, TRUE);
+	OutputLine(NULL, "「あっははは、まあね。",
+		   NULL, "\"Ха ха ха! А то какже.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800040", 256, TRUE);
+	OutputLine(NULL, "毎年ここに来てるからね。",
+		   NULL, " Я приезжаю каждый год, в конце концов.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800041", 256, TRUE);
+	OutputLine(NULL, "といっても髪形変わったら、まだどっちがどっちなのか区別できないけど」",
+		   NULL, " Тем не менее, если бы они изменили прически, я бы все равно не смог их отличить..\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 3, "left", 1, FALSE, 0, 0, 300, TRUE );
+	ModSetLayerFilter(3, 256, "sunset");
+	ModDrawCharacterWithFiltering(3, 3, "sprite/me2_tohoho_a1_", "1", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+
+//魅音「一緒にしないでください、こんなやつと」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/500300801", 256, TRUE);
+	OutputLine(NULL, "「一緒にしないでください、こんなやつと。」",
+		   NULL, "\"Не сравнивай меня с кем-то вроде нее.\"", Line_Normal);
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei35240", 256, TRUE);
+	OutputLine(NULL, "「あ、えっと……」",
+		   NULL, "\"А, эмм...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog005()
+{
+//「じゃあ私はわかるかしら...？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Женщина</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900004", 256, TRUE);
+	OutputLine(NULL, "「こんばんは。私はわかるかしら…？」",
+		   NULL, "\"А меня узнаёшь ли...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800042", 256, TRUE);
+	OutputLine(NULL, "「いやあ、一卵性双生児とは聞いてたけど、並んで見ると壮観だね。",
+		   NULL, "\"О вас я слыхал много, но своими глазами однояйцевых близнецов наблюдаю впервые.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800043", 256, TRUE);
+	OutputLine(NULL, "本当にそっくりなんだなぁ！」",
+		   NULL," Вы и впрямь одинаковы с виду!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900031", 256, TRUE);
+	OutputLine(NULL, "下界との交流を「格が落ちる」として忌み嫌ったそうなの。",
+		   NULL, "Они яростно избегали общения с чужаками, считая тех «нечистыми».", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　......だから、村に下界の人間が来ると穢れてオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Такано</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s19/09/500900032", 256, TRUE);
+	OutputLine(NULL, "　……だから、村に下界の人間が来ると不純が混じってオヤシロさまのバチが当たると強く信じ、何者も近寄らせなかったそうよ。」",
+		   NULL, "......И крепко верили, что, коль презренный человечишка из чуждых земель осквернит их землю стопой, Оясиро-сама страшно разгневается, а потому никого к себе не пускали.\"", Line_Normal);
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800072", 256, TRUE);
+	OutputLine(NULL, "「よそ者を嫌う村、ってよく推理小説に出てくるだろ。",
+		   NULL, "\"Приходилось читать о подобных деревнях в детективах.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800073", 256, TRUE);
+	OutputLine(NULL, "典型的なそういう村だったらしいんだよ。」",
+		   NULL," Так вот, раньше деревня была как раз одной из таких.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+}
+
+void dialog010()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800078", 256, TRUE);
+	OutputLine(NULL, "「バラバラ殺人だよ。」",
+		   NULL,"\"Убийство с расчленением.\"", Line_Normal);
+}
+
+void dialog011()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Томитаке</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800106", 256, TRUE);
+	OutputLine(NULL, "「その翌年には…何だっけ、ダム推進派の男の弟夫婦の奥さんだっけ？",
+		   NULL,"\"А в следующем году-то... убили, помнится, жену брата главного сторонника дамбы?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s19/08/500800107", 256, TRUE);
+	OutputLine(NULL, "　が殺されたんだよな。」",
+		   NULL, " Забили до смерти.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "じゃあ、……その時にも誰かが、……「消えた」？",
+		   NULL, " А кто-нибудь в тот раз..исчез?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

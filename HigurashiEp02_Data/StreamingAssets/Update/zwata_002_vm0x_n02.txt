@@ -1,0 +1,147 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300552", 256, TRUE);
+	OutputLine(NULL, "　カチューシャからそりゃもう何から何まで…ぜ〜んぶ揃ってるんだからねぇ！！」",
+		   NULL, "Катюшин ободок, подвязку, шортики... всё, всё приготовила!!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Рика</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 5, "ps3/s19/05/990500123", 256, TRUE);
+	OutputLine(NULL, "「……メイドさん衣装、カチューシャ、ニーソックス付きで１位の人の荷物を運ぶのですよ」",
+		   NULL, "\"Понести сумку за победителя в полном костюме горничной — с ободком и подвязкой.\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11480", 256, TRUE);
+	OutputLine(NULL, "「男がエプロンドレスの着方を習って、人生のどこで役に立つってーんだよぉおおぉ！！！」",
+		   NULL, "\"Да на хрена парню знать, как носить подвязку, где это ему пригодитсяя-а-а-а-а!!!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Рэна</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200506", 256, TRUE);
+	OutputLine(NULL, "「そ、そうだよ…。",
+		   NULL,"\"Де-действительно...", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 2, "ps3/s19/02/990200507", 256, TRUE);
+	OutputLine(NULL, "大騒ぎしたら……",
+		   NULL," Если будешь поднимать шум......", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "そ、その",
+		   NULL," то, то", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "「個性的な」趣味の人だって…勘ぐられちゃうよ？」",
+		   NULL, "  все узнают, что на тебе... девичьи трусики.\"", GetGlobalFlag(GLinemodeSp));
+
+
+
+//　!s200ぅごあぁあぁあああああぁああぁあぁああぁッ！！!sd@
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300622", 256, TRUE);
+	OutputLine(NULL, "「そうそう。",
+		   NULL,"\"Вот-вот.", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300623", 256, TRUE);
+	OutputLine(NULL, "男の人ってフリフリとかって好きなんだよねぇ〜。",
+		   NULL, " Парни обожают женщин в подвязках.", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300624", 256, TRUE);
+	OutputLine(NULL, "どうよ、それを自分で身に付けてみた感想は☆」",
+		   NULL," Каково носить её самому?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Мион</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300625", 256, TRUE);
+	OutputLine(NULL, "「きゅっとするでしょ。",
+		   NULL,"\"Туговато, ага?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s19/03/990300626", 256, TRUE);
+	OutputLine(NULL, "歩く度に足元スースーするの…ちゃんと感じてる〜？」",
+		   NULL, " Чуешь, как она трётся о кожу... при каждом шаге?\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11550", 256, TRUE);
+	OutputLine(NULL, "「をぼえてろ魅音んんん〜ッ！！！",
+		   NULL,"\"Я ещё припомню тебе, Мионнн!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11560", 256, TRUE);
+	OutputLine(NULL, "　今日の屈辱はきっと１０倍にして返すッ！！",
+		   NULL," За сегодняшнее унижение я отыграюсь десятикратно!!", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11570", 256, TRUE);
+	OutputLine(NULL, "　ぜってーに俺が圧勝して、これ以上にすごい服着せてお持ち帰りしてやるー！」",
+		   NULL, " Следующую игру я выиграю с разгромным счётом, и уж тогда-то ТЫ станешь заниматься прилюдным бесстыдством!\"", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11830", 256, TRUE);
+	OutputLine(NULL, "「魅音って結構、胸があるから今にも見えちゃいそうだよなー。",
+		   NULL, "\"Ох и большие же у тебя сиськи, Мион, того и гляди вывалятся.", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei11840", 256, TRUE);
+	OutputLine(NULL, "お客さんみんな見てるぞきっと〜！」",
+		   NULL," На тебя весь зал пялится!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Кейти</color>", NULL, Line_ContinueAfterTyping); }
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12100", 256, TRUE);
+	OutputLine(NULL, "「詩音はこういう仕事、初めてなのか？",
+		   NULL, "\"Так ты здесь первый день, Шион?", Line_WaitForInput);
+
+	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei12110", 256, TRUE);
+	OutputLine(NULL, "　慣れてなさそうだったからさ。」",
+		   NULL," Едва справляешься, как погляжу.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
