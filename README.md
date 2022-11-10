@@ -20,7 +20,7 @@
     https://github.com/07th-mod/python-patcher/releases/latest
 3)
     Загрузите последнюю версию перевода.  
-    https://github.com/.....  
+    https://github.com/wf1264/watanagashi-ru/releases/latest   
     
     Извлеките архив, который вы только что скачали.
 
